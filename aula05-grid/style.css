@@ -1,0 +1,68 @@
+body{
+    background-color: blue;
+    border: 7px solid red;
+    margin: 10px;
+}
+
+.box{
+    background-color: yellow;
+    height: 600px;
+    width: auto;
+    border: 13px solid white;
+    display: grid;
+    grid-template-areas: "menuL titulos menuR"
+                          "menuL conteudo menuR"
+                          "rodape rodape rodape";
+    grid-template-rows: 50px 1fr 100px;
+    grid-template-columns: 100px 1fr 100px;
+
+
+}
+
+.titulo{
+    background-color: red;
+    grid-area: titulos;
+    text-align: center;
+    
+}
+
+.menuL{
+    background-color: brown;
+    grid-area: menuL;
+    text-align: center;
+    grid-template-areas: "c1"
+                         "c2"
+                         "c3";
+    grid-template-rows: 10px;
+}
+
+.menuL .box1{
+    grid-area: c1;
+}
+
+.menuL .box1{
+    grid-area: c2;
+}
+
+.menuL .box1{
+    grid-area: c3;
+}
+
+.conteudo{
+      background-color: green;
+      grid-area: conteudo;
+      text-align: center;
+
+}
+
+.menuR{
+    background-color: pink;
+    grid-area: menuR;
+    text-align: center;
+}
+
+.rodape{
+    background-color: orange;
+    grid-area: rodape;
+    text-align: center;
+}
