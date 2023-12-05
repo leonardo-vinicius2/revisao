@@ -1,0 +1,46 @@
+body{
+    background-color: blue;
+    margin: 10px;
+}
+
+.box{
+
+    height: 800px;
+    width: auto;    
+    display: grid;
+    grid-template-areas: "Header1 Header1 Header1"
+                          "Menu1 Main1 Right1"
+                           "Menu1 Footer1 Footer1";
+    grid-template-rows: 100px 1fr 60px;
+    grid-template-columns: 200px 1fr 110px;
+    gap: 10px;
+}
+
+.Header1{
+ grid-area: Header1;
+ text-align: center;
+ background-color: aqua;
+}
+
+.Menu1{
+  grid-area: Menu1;
+  text-align: center;
+  background-color: aqua;
+}
+
+.Main1{
+   grid-area: Main1;
+   text-align: center;
+   background-color: aqua;
+}
+
+.Right1{
+   grid-area: Right1;
+   background-color: aqua;
+}
+
+.Footer1{
+  grid-area: Footer1;
+  text-align: center;
+  background-color: aqua;
+}

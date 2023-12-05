@@ -1,0 +1,8 @@
+#img{
+    background-image: url(miles.jpg);
+    background-repeat: no-repeat;
+    height: 1100px ;
+    width: 500px;
+    border: 10px solid red;
+    background-position: center;
+}

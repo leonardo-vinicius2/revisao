@@ -1,0 +1,55 @@
+
+
+.box{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: blue;
+ height: auto;
+ width: auto;
+    padding: 10px;
+    gap: 10px;
+
+}
+
+.box div  {
+font-size: 30px;   
+padding: 110px; 
+ text-align: center;
+ background-color: aqua;
+
+
+}
+
+.b1{
+ grid-column-start: 1;
+ grid-column-end: 3;
+}
+
+.b2{
+
+   }
+
+   .b3{
+
+   }
+
+   .b4{
+  
+   }
+
+   .b5{
+
+   }
+
+   .b6{
+
+   }
+
+   .b7{
+    grid-column-start: 2;
+    grid-column-end: 4;
+
+   }
+
+
+   

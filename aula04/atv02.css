@@ -1,0 +1,30 @@
+.div2 {
+    padding: 10px;
+    background-color: red;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#img {
+    background-image: url(miles.jpg);
+    margin-left: 200px;
+    background-repeat: no-repeat;
+    height: 500px;
+    background-size: 200px;
+}
+
+#img2 {
+    background-image: url(miles.jpg);
+    height: 400px;
+    margin-top: -500px;
+    margin-left: 1050px;
+    background-repeat: no-repeat;
+    background-size: 200px;
+}
+
+p {
+    text-align: center;
+    font-size: 40px;
+}
