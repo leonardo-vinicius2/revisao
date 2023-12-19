@@ -1,0 +1,143 @@
+body{
+    background-color: white;
+    margin: 10px;
+}
+
+.box{
+    background-color: rgb(255, 255, 255);
+    height: 780px;
+    width: auto;    
+    display: grid;
+    gap: 10px;
+    grid-template-areas: "tit tit tit"
+                          "CE contP CR"
+                           "rod rod rod";
+    grid-template-rows: 100px 1fr 90px;
+    grid-template-columns: 200px 1fr 150px;
+
+
+}
+
+.tit{
+    background-color:rgb(0, 115, 255);
+    grid-area: tit;
+    font-size: 20px;
+    display: grid;
+    grid-template-areas: "c1 c2 c3 c4";
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr ;
+
+
+    
+}
+
+ .tit #b1{
+    background-color: aqua;
+    grid-area: c1;
+}
+
+.tit  #b2{
+    background-color: brown ;
+    grid-area: c2;
+}
+
+.tit #b3{
+    background-color: red;
+    grid-area: c3;
+}
+
+.tit #b4{
+    background-color: green;
+    grid-area: c4;
+}
+
+
+
+.CE{
+    background-color:rgb(0, 115, 255);
+    grid-area: CE;
+    text-align: center;
+}
+
+
+
+.contP{
+      background-color: rgb(0, 115, 255);
+      grid-area: contP;
+      text-align: center;
+
+}
+
+.CR{
+    background-color: rgb(0, 115, 255);
+    grid-area: CR;
+    text-align: center;
+    display: grid;
+    grid-template-areas: "c1 c2 "
+    "c3 c4 "
+    "c5 c6 "
+    "c7 c8 ";
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.CR .cp1{
+    background-color: brown;
+    grid-area: c1;
+    ;
+}
+
+.CR .cp1 p{
+    background-color: green;
+}
+
+.CR .cp2{
+    background-color: burlywood;
+    grid-area: c2;
+}
+
+.CR .cp3{
+    background-color: grey;
+    grid-area: c3;
+}
+
+.CR .cp4{
+    background-color: yellow;
+    grid-area: c4;
+}
+
+.CR .cp5{
+    background-color: green;
+    grid-area: c5;
+}
+
+.CR .cp6{
+    background-color: aqua;
+    grid-area: c6;
+}
+
+.CR .cp6 p{
+  background-color: violet;
+}
+
+.CR .cp6 #p1{
+    background-color: brown;
+}
+
+.CR .cp7{
+    background-color: red;
+    grid-area: c7;
+}
+.CR .cp8{
+    background-color: violet;
+    grid-area: c8;
+}
+
+.rod{
+    background-color: rgb(0, 115, 255);
+    grid-area: rod;
+    text-align: center;
+}
+
+

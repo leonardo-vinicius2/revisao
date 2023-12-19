@@ -1,0 +1,27 @@
+
+
+.box{
+
+    height: 760px;
+    width: auto;    
+    display: grid;
+grid-template-columns: auto auto auto auto auto auto;
+    gap: 10px;
+    background-color: blue;
+
+}
+
+div  {
+
+ background-color: aqua;
+text-align: center;
+ padding: 10px;
+font-size: 40px;
+}
+
+.b8{ 
+    padding-top: 500px;
+    background-color: white;
+    grid-area: 1 / 2 / 5 / 6;
+
+}

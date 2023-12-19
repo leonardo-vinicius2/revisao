@@ -1,0 +1,83 @@
+body{
+    background-color: white;
+    margin: 10px;
+}
+
+.box{
+    background-color: rgb(255, 255, 255);
+    height: 780px;
+    width: auto;    
+    display: grid;
+    gap: 10px;
+    grid-template-areas: "tit tit tit"
+                          "CE contP CR"
+                           "rod rod rod";
+    grid-template-rows: 100px 1fr 90px;
+    grid-template-columns: 200px 1fr 150px;
+
+
+}
+
+.tit{
+    background-color:rgb(0, 115, 255);
+    grid-area: tit;
+    font-size: 20px;
+    display: grid;
+    grid-template-areas: "c1 c2 c3 c4";
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr ;
+
+
+    
+}
+
+ .tit #b1{
+    background-color: aqua;
+    grid-area: c1;
+}
+
+.tit  #b2{
+    background-color: brown ;
+    grid-area: c2;
+}
+
+.tit #b3{
+    background-color: red;
+    grid-area: c3;
+}
+
+.tit #b4{
+    background-color: green;
+    grid-area: c4;
+}
+
+
+
+.CE{
+    background-color:rgb(0, 115, 255);
+    grid-area: CE;
+    text-align: center;
+}
+
+
+
+.contP{
+      background-color: rgb(0, 115, 255);
+      grid-area: contP;
+      text-align: center;
+
+}
+
+.CR{
+    background-color: rgb(0, 115, 255);
+    grid-area: CR;
+    text-align: center;
+}
+
+.rod{
+    background-color: rgb(0, 115, 255);
+    grid-area: rod;
+    text-align: center;
+}
+
+
