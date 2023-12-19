@@ -1,0 +1,87 @@
+.prin {
+  background-color: rgb(255, 255, 255);
+  height: 780px;
+  width: auto;
+  display: grid;
+  gap: 10px;
+  grid-template-areas:
+    "b1 b1"
+    "b2 b3"
+    "b4 b4";
+  grid-template-rows: 100px 1fr 120px;
+  grid-template-columns: 1fr 300px;
+}
+
+div {
+  text-align: center;
+  font-size: 40px;
+}
+
+.b1 {
+  background-color: red;
+  grid-area: b1;
+}
+
+.b2 {
+  display: flex;
+  flex-direction: column;
+  grid-area: b2;
+  background-color: yellow;
+}
+
+.b3 {
+  grid-area: b3;
+  background-color: violet;
+}
+
+.b4 {
+  display: flex;
+  grid-area: b4;
+  background-color: antiquewhite;
+}
+
+.bx1,
+.bx2,
+.bx3 {
+  width: 100%;
+  height: 33.33%;
+  background-color: blue;
+}
+.bx2 {
+  background-color: chocolate;
+}
+
+.c1,
+.c2,
+.c3 {
+  width: 100%;
+  height: 100%;
+  background-color: red;
+}
+.c2 {
+  background-color: green;
+}
+@media screen and (max-width: 992px){
+    .prin{
+      grid-template-columns: 100%;
+     grid-template-areas: "b1" "b2" "b3" "b4" ;
+    }
+    .b4{
+      display: flex;
+      flex-wrap: wrap; 
+     text-align: center;   
+    }
+    .c1, .c2, .c3{
+        width: 25%;
+        background-color: aqua;
+    }
+
+    .c2{
+        width: 50%;
+        margin:  0 ;
+        background-color: blueviolet;
+    }
+    .c3{
+        margin: 0;
+    }
+}
