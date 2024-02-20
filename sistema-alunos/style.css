@@ -16,14 +16,14 @@ header > img{
 header > nav{   
 
     display: flex;
-     width: 300px;
-     font-size: 20px;
-     justify-content: space-between;   
+     width: 700px;
+     justify-content: space-evenly;   
 
 }
 
-nav a{ color: black;
-    font-size: 30px;
+nav a{
+     color: black;
+    font-size: 20px;
     text-decoration: none;
     opacity: 0.6;   
     transition: all 0.4s;
@@ -57,23 +57,30 @@ flex: 4;
 }
 
 h3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
+
 }
 
 .forms{
     display: flex;
     justify-content: center;
     align-items: center;
+}
 
+label{
+    font-size: large;
 }
 
 
 form{
     display: flex;
+    width: 600px;
     justify-content: center;
     flex-direction: column;
-    max-width: 300px;
-    gap: 3px;
+    gap: 10px;
  }
  
  form input, form textarea{
@@ -81,7 +88,7 @@ form{
      background-color: rgb(71, 71, 71);
      border: none;
      outline: 0;
-     padding: 20px 15px;
+     padding: 15px;
      border-radius: 10px;
      color: white;
      font-size: 18px;
@@ -89,11 +96,10 @@ form{
  
  form textarea{
      resize: none;
-     max-height: 200px;
- }
+    }
  
  form .enviar{
- margin-top: 20px;
+ margin-top: 10px;
  text-align: center;
  }
  
@@ -111,6 +117,37 @@ form{
      box-shadow: 0 0 40px 5px rgb(0, 94, 94);
  }
 
+ form #telefone{
+    max-width: 200px;
+ }
+ form #email{
+    max-width: 200px;
+ }
+ form #endereco{
+
+ }
+
+ form #senha{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   max-width: 400px;
+ }
+
+ form #nome {
+
+ }
+
+ div .form2{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 600px;
+    text-align: center;
+    
+ }
+
 footer{
 display: flex;
 align-items: center;
@@ -118,3 +155,53 @@ justify-content: center;
 background-color: #4180ab;
 height: 50px;
 }
+
+#customers {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+  }
+  
+  #customers td, #customers th {
+    text-align: center;
+    width: 200px;
+    border: 1px solid #ddd;
+    padding: 8px;
+    background-color: white;
+  }
+
+  
+  #customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #4180ab;
+    color: white;
+  }
+
+.box1{
+  
+    display: grid;
+    grid-template-areas: "gd1 gd2 ";
+    grid-template-columns: 1fr  1fr;
+    background-color: yellow;
+    height: 600px;
+    width: auto;  
+
+  }
+
+  .gd1{
+   grid-area: gd1;
+   background-color: red;
+  }
+  .gd2{
+    grid-area: gd2;
+    background-color: #8ab3cf;
+
+  }
+
+  #ch{
+    max-width: 200px;
+  }
